@@ -104,7 +104,7 @@ function createCanvas(elem){
   context.imageSmoothingEnabled = false;
   context.webkitImageSmoothingEnabled = false;
   
-  document.querySelector('#attendee-name').style.borderBottom = "2px solid transparent";
+  document.querySelector('#attendee-name');
   document.querySelector('#control').style.display= "none";
   
   tmp = html2canvas(elem, {scale:scaleFactor, 
@@ -120,7 +120,7 @@ function createCanvas(elem){
     }
     badge.insertBefore(canvas, btn);
     setTimeout(function(){
-      document.querySelector('#attendee-name').style.borderBottom = "2px solid #eb7713"; 
+      document.querySelector('#attendee-name'); 
       document.querySelector('#control').style.display = "block";  
     }, 2000);
     return canvas;
